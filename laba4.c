@@ -13,8 +13,7 @@ int main ()
         l1=loga(n);
         l2=loga(2*n);
         n=2*n;
-        printf("n %lf    l1 %lf     l2 %lf\n",n,l1,l2);
-    } printf ("value int - %lf", l2);
+    } printf ("integral value  - %lf", l2);
     return 0;
 }
 
