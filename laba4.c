@@ -2,16 +2,18 @@
 #include <math.h>
 
 double loga(double n);
-int n=2;
 double l1=0,l2=1,e=0.000001;
 
 int main ()
 {
     double sum=0;
-    while (((l2-l1)/3)>e){
+    double n;
+    scanf("%lf",&n);
+    while ((fabs(l2-l1)/3)>e){
         l1=loga(n);
         l2=loga(2*n);
         n=2*n;
+        printf("n %lf    l1 %lf     l2 %lf\n",n,l1,l2);
     } printf ("value int - %lf", l2);
     return 0;
 }
