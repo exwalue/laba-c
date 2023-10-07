@@ -7,8 +7,8 @@ double l1=0,l2=1,e=0.000001;
 int main ()
 {
     double sum=0;
-    double n;
-    scanf("%lf",&n);
+    double n;         //те кто смотрят эту лабу парни, надо сделать ввод погрешности(е), а не шага(n), я исправлял на паре 
+    scanf("%lf",&n);    // все остальное четко 
     while ((fabs(l2-l1)/3)>e){
         l1=loga(n);
         l2=loga(2*n);
